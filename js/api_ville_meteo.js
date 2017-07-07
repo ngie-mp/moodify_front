@@ -44,6 +44,7 @@ getMeteo = function getMeteo(){
             case "eclaircies":
             case "stratus-se-dissipant":
               weather = "sun";
+              $('#card .icon_condition').attr('src',"../css/icons/sun1.svg");
               break;
             case "nuit-claire":
             case "nuit-legerement-voilee":
@@ -59,6 +60,7 @@ getMeteo = function getMeteo(){
                 $('#card .details').css('color','rgb(239, 237, 237)');
 
                 weather = "night";
+                $('#card .icon_condition').attr('src',"../css/icons/moon2.svg");
                 break;
             case "ciel-voile":
             case "faiblement-nuageux":
@@ -70,11 +72,13 @@ getMeteo = function getMeteo(){
             case "nuit-faiblement-orageuse":
             case "nuit-avec-averses-de-neige-faible":
                 weather = "wind";
+                  $('#card .icon_condition').attr('src',"../css/icons/wind-1.svg");
                 break;
             case "faiblement-orageux":
             case "orage-modere":
             case "fortement-orageux":
                 weather = "thunder";
+                $('#card .icon_condition').attr('src',"../css/icons/thunder.svg");
                 break;
             case "averses-de-pluie-faible":
             case "averses-de-pluie-moderee":
@@ -87,6 +91,7 @@ getMeteo = function getMeteo(){
             case "pluie-et-neige-melee-moderee":
             case "pluie-et-neige-melee-forte":
               weather = "rain";
+              $('#card .icon_condition').attr('src',"../css/icons/rain-4.svg");
                 break;
 
             case "averses-de-neige-faible":
@@ -94,6 +99,7 @@ getMeteo = function getMeteo(){
             case "neige-moderee":
             case "neige-forte":
               weather = "snow";
+              ('#card .icon_condition').attr('src',"../css/icons/snow.svg");
                 break;
 
             default:console.log("Error de condition_key")
