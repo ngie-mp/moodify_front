@@ -1,0 +1,22 @@
+{
+  "name": "moodify_front",
+  "version": "1.0.0",
+  "description": "School web application project ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngie-mp/moodify_front.git"
+  },
+  "author": "Angeles M",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngie-mp/moodify_front/issues"
+  },
+  "homepage": "https://github.com/ngie-mp/moodify_front#readme",
+  "dependencies": {
+    "flexboxgrid": "^6.3.1"
+  }
+}
