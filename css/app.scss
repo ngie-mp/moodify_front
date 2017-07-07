@@ -5,11 +5,6 @@
 $speed: 2s;
 
 
-.overlay  {
-	background: red;
-	height: 100vh;
-}
-
 html, body, .background
 {
 	width: 100%;
@@ -18,23 +13,36 @@ html, body, .background
 	padding: 0;
 	font-family: 'Roboto', sans-serif;
 }
-#main {
-}
-#body_corp {
-	width: 50%;
-	margin: 0 auto;
-	input {
-		width: 100%;
-		height: 50px;
-		padding: 1%;
-		margin: 30px;
+
+.content {
+	height: 100vh;
+	background: #262626;
+	.logo{
+		text-align: center;
+		color: #f6f6f6;
+		font-size: 3.5em;
+		padding: 20px 0;
+		margin: 0;
 	}
-	.hide {
-		display: none;
+	#body_corp {
+		position: relative;
+		top: 25%;
+		width: 50%;
+		margin: 0 auto;
+		input {
+			width: 100%;
+			height: 45px;
+			padding: 1%;
+			margin: 40px 0;
+		}
+		.hide {
+			display: none;
+		}
+		button { width: 50px; }
+		textarea { width: 100%; }
 	}
-	button { width: 50px; }
-	textarea { width: 100%; }
 }
+
 
 .buttonRec {
   width: 80px;
@@ -114,6 +122,7 @@ p{
 		font-size: 2.5em;
 		text-align: center;
 		font-family: 'Josefin Slab', serif;
+		color: #262626;
 	}
 }
 section{
@@ -156,6 +165,8 @@ body.sticky-header{
 		}
 	}
 }
+
+/* Weather */
 
 .background
 {
@@ -349,5 +360,38 @@ nav
 {
 	position: fixed;
 	pointer-events: none;
+
+}
+
+/*-------------------------------< RESPONSIVE >-------------------------------*/
+
+@media only screen and (min-width: 65.250em) and (max-width: 90.000em) {
+    /* en dessus de 971px - SITE NORMAL */
+
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    /* en dessous de 970px - TABLETTE */
+
+}
+@media only screen and (max-width: 40em) {
+    /* en dessous de 600px - GRAND MOBILE */
+		#card {
+			.details {
+				#temperature_ville {
+					font-size: 2.2em;
+				}
+				#name_ville {
+					font-size: 2.5em;
+					font-weight: 300;
+				}
+				#summary {
+					font-size: 1em;
+				}
+			}
+		}
+
+}
+@media screen and (max-width: 480px) {
+    /* en dessous de 480px - PETIT MOBILE */
 
 }

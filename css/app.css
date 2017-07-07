@@ -1,10 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i");
 @import "https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css";
 @import url("https://fonts.googleapis.com/css?family=Josefin+Slab:300,300i,400,400i,600,600i");
-.overlay {
-  background: red;
-  height: 100vh; }
-
 html, body, .background {
   width: 100%;
   height: 100%;
@@ -12,20 +8,31 @@ html, body, .background {
   padding: 0;
   font-family: 'Roboto', sans-serif; }
 
-#body_corp {
-  width: 50%;
-  margin: 0 auto; }
-  #body_corp input {
-    width: 100%;
-    height: 50px;
-    padding: 1%;
-    margin: 30px; }
-  #body_corp .hide {
-    display: none; }
-  #body_corp button {
-    width: 50px; }
-  #body_corp textarea {
-    width: 100%; }
+.content {
+  height: 100vh;
+  background: #262626; }
+  .content .logo {
+    text-align: center;
+    color: #f6f6f6;
+    font-size: 3.5em;
+    padding: 20px 0;
+    margin: 0; }
+  .content #body_corp {
+    position: relative;
+    top: 25%;
+    width: 50%;
+    margin: 0 auto; }
+    .content #body_corp input {
+      width: 100%;
+      height: 45px;
+      padding: 1%;
+      margin: 40px 0; }
+    .content #body_corp .hide {
+      display: none; }
+    .content #body_corp button {
+      width: 50px; }
+    .content #body_corp textarea {
+      width: 100%; }
 
 .buttonRec {
   width: 80px;
@@ -96,7 +103,8 @@ p {
 #proposition h1 {
   font-size: 2.5em;
   text-align: center;
-  font-family: 'Josefin Slab', serif; }
+  font-family: 'Josefin Slab', serif;
+  color: #262626; }
 
 section {
   padding: 20px;
@@ -126,6 +134,7 @@ body.sticky-header {
       body.sticky-header header .background #card .details #summary {
         color: #f6f6f6; }
 
+/* Weather */
 .background {
   background: #eee;
   background: linear-gradient(120deg, rgba(50, 150, 100, 0.2), rgba(0, 0, 100, 0)); }
@@ -230,5 +239,22 @@ nav li a {
 #outer, #back {
   position: fixed;
   pointer-events: none; }
+
+/*-------------------------------< RESPONSIVE >-------------------------------*/
+@media only screen and (min-width: 65.25em) and (max-width: 90em) {
+  /* en dessus de 971px - SITE NORMAL */ }
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  /* en dessous de 970px - TABLETTE */ }
+@media only screen and (max-width: 40em) {
+  /* en dessous de 600px - GRAND MOBILE */
+  #card .details #temperature_ville {
+    font-size: 2.2em; }
+  #card .details #name_ville {
+    font-size: 2.5em;
+    font-weight: 300; }
+  #card .details #summary {
+    font-size: 1em; } }
+@media screen and (max-width: 480px) {
+  /* en dessous de 480px - PETIT MOBILE */ }
 
 /*# sourceMappingURL=app.css.map */
