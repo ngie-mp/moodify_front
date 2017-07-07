@@ -257,7 +257,10 @@ nav li a {
       font-size: 2.5em;
       font-weight: 300; }
     #card .details #summary {
-      font-size: 1.5em; } }
+      font-size: 1.5em; }
+
+  #proposition h1 {
+    font-size: 1em; } }
 @media screen and (max-width: 480px) {
   /* en dessous de 480px - PETIT MOBILE */ }
 
