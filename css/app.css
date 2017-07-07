@@ -195,6 +195,9 @@ nav li a {
     #card .details #date {
       margin: 4px 0;
       font-weight: 100; }
+    #card .details .icons-size {
+      width: 40px;
+      padding: 25px 0; }
     #card .details #summary {
       font-weight: 300;
       font-size: 2.5em; }
