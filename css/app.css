@@ -192,10 +192,9 @@ nav li a {
     transition: all 2s ease; }
     .thunder #card .details {
       color: #ddd; }
-    #card .details .right {
-      text-align: right; }
     #card .details #date {
-      margin: 4px 0; }
+      margin: 4px 0;
+      font-weight: 100; }
     #card .details #summary {
       font-weight: 300;
       font-size: 2.5em; }
@@ -247,13 +246,15 @@ nav li a {
   /* en dessous de 970px - TABLETTE */ }
 @media only screen and (max-width: 40em) {
   /* en dessous de 600px - GRAND MOBILE */
-  #card .details #temperature_ville {
-    font-size: 2.2em; }
-  #card .details #name_ville {
-    font-size: 2.5em;
-    font-weight: 300; }
-  #card .details #summary {
-    font-size: 1em; } }
+  #card .details {
+    flex-direction: column; }
+    #card .details #temperature_ville {
+      font-size: 3em; }
+    #card .details #name_ville {
+      font-size: 2.5em;
+      font-weight: 300; }
+    #card .details #summary {
+      font-size: 1.5em; } }
 @media screen and (max-width: 480px) {
   /* en dessous de 480px - PETIT MOBILE */ }
 

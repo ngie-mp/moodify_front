@@ -260,15 +260,10 @@ nav
 		{
 			color: #ddd;
 		}
-
-		.right
-		{
-			text-align: right;
-		}
-
 		#date
 		{
 			margin: 4px 0;
+			font-weight: 100;
 		}
 
 		#summary
@@ -377,15 +372,16 @@ nav
     /* en dessous de 600px - GRAND MOBILE */
 		#card {
 			.details {
+				flex-direction: column;
 				#temperature_ville {
-					font-size: 2.2em;
+					font-size: 3em;
 				}
 				#name_ville {
 					font-size: 2.5em;
 					font-weight: 300;
 				}
 				#summary {
-					font-size: 1em;
+					font-size: 1.5em;
 				}
 			}
 		}
